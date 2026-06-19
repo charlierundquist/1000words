@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4d41caa404.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js"></script>
+    <script src="scripts.js"></script>
+    <title>1000 Words | Charlie Rundquist</title>
+</head>
+<body>
+
+    <div class="background"></div>
+    <div class="piece-title-display show-with-results">test title</div>
+
+    <dialog class="links animate-start">
+        <h2 class="piece-title">Untitled</h2>
+        <h3></h3>
+        <qr-code contents="https://bitjson.com"></qr-code>
+        <a href="" class="results-link" target="_blank">results</a>
+        <p>press escape to refresh</p>
+    </dialog>
+
+    <dialog class="enter-title animate-start">
+        <form action="">
+        <h2>Enter a title for your piece:</h2>
+        <input type="text" name="title" id="title-input" placeholder="Untitled">
+        </form>
+    </dialog>
+
+    <div class="info left">
+        <div class="letter-grid"></div>
+    </div>
+
+    <div class="canvas show-with-results">
+        <div class="result-word show-with-results"></div>
+    </div>
+
+    <div class="instructions-background"></div>
+    <div class="instructions animate-start">
+        <h2>"1000 Words"</h2>
+        <h3>by Charlie Rundquist</h3>
+        <p>Everything you make with this tool is art. Unlike an Artificial Intelligence, you are using your creativity to get a result that has a human touch.</p>
+        <p><span class="start-command">Start typing</span> to begin, and if you get stuck, type "hint" to get some ideas.</p>
+        <p>When you're finished, just type "done"</p>
+    </div>
+
+    <div class="hint">
+        <p>Try typing things like "green" or "size 20" or "density 3" to alter the numbers in the info panel. <span>Also, try tapping on the canvas.</span></p>
+    </div>
+
+    <div class="info right">
+        <div class="paint-color-row">
+            <h2>Paint Color:</h2>
+            <div class="paint-swatch"></div>
+            <div class="paint-color-display">Grape</div>
+        </div>
+        <div class="size-density-row">
+            <div class="left">
+                <h2>Size:</h2>
+                <div class="size-display">10</div>
+            </div>
+            <div class="middle">
+                <h2>Density:</h2>
+                <div class="density-display">1</div>
+            </div>
+            <div class="right">
+                <h2>Velocity:</h2>
+                <div class="velocity-display">4</div>
+            </div>
+        </div>
+        <div class="last-word-row">
+            <h2>Last Word:</h2>
+            <div class="last-word">n/a</div>
+        </div>
+    </div>
+
+    <input type="text" name="input box" id="input" class="input" placeholder="enter a word">
+
+    <div class="keyboard">
+        <div class="row top"></div>
+        <div class="row mid"></div>
+        <div class="row bottom"></div>
+        <div class="row space">
+            <div class="spacebar button">space</div>
+        </div>
+    </div>
+
+</body>
+</html>
